@@ -1,0 +1,80 @@
+:root {
+  --master-text-color: #212121;
+  --slave-text-color: #757575;
+  --accent-site-color: #2196f3;
+  --pure-white-color: #ffffff;
+}
+
+/* ------ TAG-SELECTOR ------ */
+
+body {
+  font-family: 'roboto', sans-serif;
+  color: var(--master-text-color);
+  background-color: var(--pure-white-color);
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+/* ------ UTILITY ------ */
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.link {
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-site-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+  border: 0px solid transparent;
+  border-radius: 4px;
+}
+
+.btn:active {
+  background-color: #188ce8;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
