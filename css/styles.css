@@ -62,6 +62,10 @@ ul {
   border-radius: 4px;
 }
 
+.btn:active {
+  background-color: #188ce8;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -119,7 +123,6 @@ ul {
   display: flex;
   align-items: center;
   gap: 50px;
-  list-style: none;
 }
 
 .header__item {
@@ -136,15 +139,6 @@ ul {
   padding-bottom: 32px;
   display: flex;
   align-items: center;
-  text-decoration: none;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__link:hover,
-.header__link:focus {
-  color: var(--accent-site-color);
 }
 
 .header__link--active {
@@ -218,27 +212,13 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 32px;
   margin-top: 30px;
-  cursor: pointer;
-  font-family: inherit;
-  border: 0px solid transparent;
-  border-radius: 4px;
-}
-
-.hero__button:active {
-  background-color: #188ce8;
 }
 
 /* ------ BENEFIT ------ */
 
-.benefit__section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .benefit__list {
   display: flex;
   gap: 30px;
-  list-style: none;
 }
 
 .benefit__item {
@@ -274,11 +254,6 @@ ul {
 
 /* ------ PROCESS ------ */
 
-.process__section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .process__title {
   font-weight: 700;
   font-size: 36px;
@@ -291,7 +266,6 @@ ul {
 .process__list {
   display: flex;
   gap: 30px;
-  list-style: none;
 }
 
 .process__item {
@@ -325,10 +299,8 @@ ul {
 
 /* ------ MEMBER ------ */
 
-.member__section {
+.member {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .member__text {
@@ -343,7 +315,6 @@ ul {
 .member__list {
   display: flex;
   gap: 30px;
-  list-style: none;
 }
 
 .member__item {
@@ -385,7 +356,6 @@ ul {
   display: flex;
   gap: 10px;
   justify-content: center;
-  list-style: none;
 }
 
 .member__social-link {
@@ -410,10 +380,8 @@ ul {
 
 /* ------ CLIENT ------ */
 
-.client__section {
+.client {
   background-color: var(--pure-white-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .client__title {
@@ -428,7 +396,6 @@ ul {
 .client__list {
   display: flex;
   gap: 30px;
-  list-style: none;
 }
 
 .client__item {
@@ -474,10 +441,6 @@ ul {
   margin-top: 20px;
 }
 
-.footer__address-list {
-  list-style: none;
-}
-
 .footer__address-item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -488,19 +451,10 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__link--white {
   color: var(--pure-white-color);
-}
-
-.footer__link:hover,
-.footer__link:focus {
-  color: var(--accent-site-color);
 }
 
 .footer__social-text {
@@ -516,7 +470,6 @@ ul {
 .footer__social-list {
   display: flex;
   gap: 10px;
-  list-style: none;
 }
 
 .footer__social-item {
@@ -586,14 +539,6 @@ ul {
   justify-content: center;
   padding: 10px 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  font-family: inherit;
-  border: 0px solid transparent;
-  border-radius: 4px;
-}
-
-.footer__button:active {
-  background-color: #188ce8;
 }
 
 .footer__icon-send {
@@ -742,19 +687,6 @@ ul {
   margin-bottom: 30px;
 }
 
-.contract__input {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 .contract__input:checked + .contract__label > .contract__icon-wrap {
   background-color: var(--accent-site-color);
   border: 0 solid transparent;
@@ -824,32 +756,11 @@ ul {
 
 /* ------ FILTER ------ */
 
-.filter {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.filter__title {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 .filter__list {
   display: flex;
   gap: 8px;
   margin-bottom: 50px;
   justify-content: center;
-  list-style: none;
 }
 
 .filter__button {
@@ -864,10 +775,6 @@ ul {
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-  font-family: inherit;
-  border: 0px solid transparent;
-  border-radius: 4px;
 }
 
 .filter__button:hover,
@@ -879,18 +786,10 @@ ul {
 
 /* ------ PROJECT ------ */
 
-.project {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .project__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  list-style: none;
 }
 
 .project__item {
