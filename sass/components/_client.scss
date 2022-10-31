@@ -1,5 +1,5 @@
 .client {
-  background-color: var(--pure-white-color);
+  background-color: $pure-white-color;
 
   &__title {
     font-weight: 700;
@@ -22,20 +22,20 @@
   &__link {
     width: 170px;
     height: 92px;
-    background-color: var(--pure-white-color);
+    background-color: $pure-white-color;
     border-radius: 4px;
-    border: 1px solid #afb1b8;
+    border: 1px solid $dark-grey-color;
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #afb1b8;
+    fill: $dark-grey-color;
     transition-property: fill, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      fill: var(--accent-site-color);
-      border-color: var(--accent-site-color);
+      fill: $accent-site-color;
+      border-color: $accent-site-color;
     }
   }
 }

@@ -1,14 +1,22 @@
-:root {
-  --master-text-color: #212121;
-  --slave-text-color: #757575;
-  --accent-site-color: #2196f3;
-  --pure-white-color: #ffffff;
-}
+// :root {
+//   --master-text-color: #212121;
+//   --slave-text-color: #757575;
+//   --accent-site-color: #2196f3;
+//   --pure-white-color: #ffffff;
+// }
+
+$master-text-color: #212121;
+$slave-text-color: #757575;
+$accent-site-color: #2196f3;
+$pure-white-color: #ffffff;
+$active-button-color: #188ce8;
+$light-grey-color: #f5f4fa;
+$dark-grey-color: #afb1b8;
 
 body {
   font-family: 'roboto', sans-serif;
-  color: var(--master-text-color);
-  background-color: var(--pure-white-color);
+  color: $master-text-color;
+  background-color: $pure-white-color;
 }
 
 p,
@@ -40,11 +48,10 @@ ul {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link:hover,
-.link:focus {
-  color: var(--accent-site-color);
+  &:hover,
+  &:focus {
+    color: $accent-site-color;
+  }
 }
 
 .list {
@@ -56,10 +63,9 @@ ul {
   font-family: inherit;
   border: 0px solid transparent;
   border-radius: 4px;
-}
-
-.btn:active {
-  background-color: #188ce8;
+  &:active {
+    background-color: $active-button-color;
+  }
 }
 
 .visually-hidden {
