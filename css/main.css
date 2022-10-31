@@ -442,7 +442,7 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__input:focus {
-  border-color: var(--accent-site-color);
+  border-color: #2196f3;
 }
 .footer__button {
   font-family: "Roboto";
@@ -450,8 +450,8 @@ ul {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--pure-white-color);
-  background-color: var(--accent-site-color);
+  color: #ffffff;
+  background-color: #2196f3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -460,7 +460,7 @@ ul {
 }
 .footer__icon-send {
   margin-left: 10px;
-  fill: var(--pure-white-color);
+  fill: #ffffff;
 }
 
 .backdrop {
