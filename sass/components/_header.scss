@@ -1,88 +1,63 @@
 .header {
   border-bottom: 1px solid #ececec;
-}
 
-.header__container {
-  display: flex;
-  align-items: center;
-}
+  &__container {
+    display: flex;
+    align-items: center;
+  }
 
-.header__navigation {
-  display: flex;
-  align-items: center;
-}
+  &__navigation {
+    display: flex;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
 
-.logo {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
+  &__item {
+    position: relative;
+  }
 
-.logo--dark {
-  color: #000000;
-}
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--master-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+  }
 
-.logo--light {
-  color: var(--pure-white-color);
-}
+  &__link--active {
+    color: var(--accent-site-color);
+  }
 
-.logo__accent {
-  color: var(--accent-site-color);
-}
+  &__link--active::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-site-color);
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 
-.header__list {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
+  &__list--right {
+    margin-left: auto;
+  }
 
-.header__item {
-  position: relative;
-}
+  &__link--light {
+    color: var(--slave-text-color);
+  }
 
-.header__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--master-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: flex;
-  align-items: center;
-}
-
-.header__link--active {
-  color: var(--accent-site-color);
-}
-
-.header__link--active::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-site-color);
-  border-radius: 4px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.header__list--right {
-  margin-left: auto;
-}
-
-.header__link--light {
-  color: var(--slave-text-color);
-}
-
-.header__icon {
-  fill: currentColor;
-  margin-right: 10px;
+  &__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
 }

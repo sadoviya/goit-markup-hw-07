@@ -21,17 +21,16 @@
     padding: 0 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__input:focus ~ &__icon {
     fill: var(--accent-site-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__input:focus {
     outline: transparent;
     border-color: var(--accent-site-color);
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__icon {
@@ -39,6 +38,7 @@
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__comments {
@@ -62,10 +62,6 @@
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-  }
-  &__icon {
-    fill: transparent;
-    display: flex;
   }
 
   &__button {
@@ -95,15 +91,14 @@
 .contract {
   margin-top: 20px;
   margin-bottom: 30px;
-  &__input:checked + .&__label > &__icon-wrap {
+
+  &__input:checked + &__label > &__icon-wrap {
     background-color: var(--accent-site-color);
     border: 0 solid transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__input:checked + &__label &__icon {
     fill: var(--pure-white-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__label {
@@ -128,9 +123,17 @@
     height: 15px;
     border: 2px solid var(--master-text-color);
     border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 50ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__icon-wrap:hover {
     border-color: var(--accent-site-color);
+  }
+
+  &__icon {
+    fill: transparent;
+    display: flex;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
