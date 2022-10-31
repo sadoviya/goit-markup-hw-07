@@ -5,9 +5,12 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  &--right {
+    margin-right: 93px;
+  }
 
   &--dark {
     color: #000000;
