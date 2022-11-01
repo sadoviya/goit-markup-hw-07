@@ -6,7 +6,7 @@
   }
 
   &__item {
-    background-color: var(--pure-white-color);
+    background-color: $pure-white-color;
     width: calc((100% - 60px) / 3);
     transition-property: box-shadow;
     transition-duration: 250ms;

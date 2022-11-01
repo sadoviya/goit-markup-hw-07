@@ -83,10 +83,10 @@ ul {
   color: #000000;
 }
 .logo--light {
-  color: var(--pure-white-color);
+  color: #ffffff;
 }
 .logo__accent {
-  color: var(--accent-site-color);
+  color: #2196f3;
 }
 
 .header {
@@ -105,6 +105,9 @@ ul {
   align-items: center;
   gap: 50px;
 }
+.header__list--right {
+  margin-left: auto;
+}
 .header__item {
   position: relative;
 }
@@ -113,31 +116,28 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--master-text-color);
+  color: #212121;
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
   align-items: center;
 }
 .header__link--active {
-  color: var(--accent-site-color);
+  color: #2196f3;
 }
 .header__link--active::after {
   content: "";
   width: 100%;
   height: 4px;
-  background-color: var(--accent-site-color);
+  background-color: #2196f3;
   border-radius: 4px;
   display: block;
   position: absolute;
   bottom: 0;
   left: 0;
 }
-.header__list--right {
-  margin-left: auto;
-}
 .header__link--light {
-  color: var(--slave-text-color);
+  color: #757575;
 }
 .header__icon {
   fill: currentColor;
@@ -164,7 +164,7 @@ ul {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--pure-white-color);
+  color: #ffffff;
   max-width: 696px;
   margin: 0 auto;
 }
@@ -173,8 +173,8 @@ ul {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--pure-white-color);
-  background-color: var(--accent-site-color);
+  color: #ffffff;
+  background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 32px;
   margin-top: 30px;
@@ -242,7 +242,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--pure-white-color);
+  color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
   position: absolute;
   width: 100%;
@@ -270,7 +270,7 @@ ul {
   gap: 30px;
 }
 .member__item {
-  background-color: var(--pure-white-color);
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   width: calc((100% - 90px) / 4);
   border-radius: 0px 0px 4px 4px;
@@ -296,7 +296,7 @@ ul {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--slave-text-color);
+  color: #757575;
   margin-bottom: 16px;
 }
 .member__social-list {
@@ -307,7 +307,7 @@ ul {
 .member__social-link {
   width: 44px;
   height: 44px;
-  background-color: var(--pure-white-color);
+  background-color: #ffffff;
   fill: #afb1b8;
   border-radius: 50%;
   display: flex;
@@ -318,8 +318,8 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .member__social-link:hover, .member__social-link:focus {
-  background-color: var(--accent-site-color);
-  fill: var(--pure-white-color);
+  background-color: #2196f3;
+  fill: #2196f3;
 }
 
 .client {
@@ -490,7 +490,7 @@ ul {
   position: relative;
   min-width: 528px;
   min-height: 581px;
-  background-color: var(--pure-white-color);
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
@@ -505,14 +505,14 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--pure-white-color);
+  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop__button:hover {
-  fill: var(--accent-site-color);
+  fill: #2196f3;
 }
 .backdrop__title {
   display: block;
@@ -522,7 +522,7 @@ ul {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--master-text-color);
+  color: #212121;
 }
 
 .form__item {
@@ -531,7 +531,7 @@ ul {
 .form__label {
   display: block;
   margin-bottom: 4px;
-  color: var(--slave-text-color);
+  color: #757575;
   font-size: 12px;
   line-height: 1.16;
 }
@@ -547,11 +547,11 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input:focus ~ .form__icon {
-  fill: var(--accent-site-color);
+  fill: #2196f3;
 }
 .form__input:focus {
   outline: transparent;
-  border-color: var(--accent-site-color);
+  border-color: #2196f3;
 }
 .form__icon {
   position: absolute;
@@ -570,7 +570,7 @@ ul {
 }
 .form__comments:focus {
   outline: transparent;
-  border-color: var(--accent-site-color);
+  border-color: #2196f3;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__comments::-moz-placeholder {
@@ -604,11 +604,11 @@ ul {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  background-color: var(--accent-site-color);
+  background-color: #2196f3;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  color: var(--pure-white-color);
+  color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 0px solid transparent;
 }
@@ -621,11 +621,11 @@ ul {
   margin-bottom: 30px;
 }
 .contract__input:checked + .contract__label > .contract__icon-wrap {
-  background-color: var(--accent-site-color);
+  background-color: #2196f3;
   border: 0 solid transparent;
 }
 .contract__input:checked + .contract__label .contract__icon {
-  fill: var(--pure-white-color);
+  fill: #ffffff;
 }
 .contract__label {
   display: flex;
@@ -634,10 +634,10 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--slave-text-color);
+  color: #757575;
 }
 .contract__link {
-  color: var(--accent-site-color);
+  color: #2196f3;
   margin-left: 5px;
 }
 .contract__icon-wrap {
@@ -645,13 +645,13 @@ ul {
   margin: 0 8px 0 12px;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--master-text-color);
+  border: 2px solid #212121;
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 50ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contract__icon-wrap:hover {
-  border-color: var(--accent-site-color);
+  border-color: #2196f3;
 }
 .contract__icon {
   fill: transparent;
@@ -690,7 +690,7 @@ ul {
   gap: 30px;
 }
 .project__item {
-  background-color: var(--pure-white-color);
+  background-color: #ffffff;
   width: calc((100% - 60px) / 3);
   transition-property: box-shadow;
   transition-duration: 250ms;

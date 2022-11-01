@@ -13,14 +13,14 @@
   }
 
   &--dark {
-    color: #000000;
+    color: $pure-black-color;
   }
 
   &--light {
-    color: var(--pure-white-color);
+    color: $pure-white-color;
   }
 
   &__accent {
-    color: var(--accent-site-color);
+    color: $accent-site-color;
   }
 }
