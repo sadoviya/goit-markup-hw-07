@@ -716,7 +716,7 @@ ul {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: var(--pure-white-color);
+  color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   position: absolute;
   top: 0;
@@ -736,12 +736,12 @@ ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--master-text-color);
+  color: #212121;
   margin-bottom: 4px;
 }
 .project__alt {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: var(--slave-text-color);
+  color: #757575;
 }/*# sourceMappingURL=main.css.map */
