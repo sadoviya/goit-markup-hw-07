@@ -319,7 +319,7 @@ ul {
 }
 .member__social-link:hover, .member__social-link:focus {
   background-color: #2196f3;
-  fill: #2196f3;
+  fill: #ffffff;
 }
 
 .client {
